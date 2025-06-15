@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(233, 214, 237);
+}
+
+nav {
+    font-family: Georgia, serif;
+    font-weight: 900;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(97, 60, 133);
+    padding: 23px;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: rgb(214, 174, 214);
+    transition: all;
+    transition-duration: 500ms;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul {
+    display: flex;
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 23px;
+    gap: 12px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #7d0b5d;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.logo-img {
+    height: 55px;
+    border-radius: 8px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.logo-text {
+    transition: color 0.4s ease;
+}
+
+/* Hover effect */
+div.logo:hover .logo-img {
+    transform: scale(1.12) rotate(2deg);
+    box-shadow: 0 6px 12px rgba(154, 189, 192, 0.3);
+}
+
+
+.container {
+    min-height: 100vh;
+    max-width: 80vw;
+    margin: auto;
+
+}
+
+.container h1 {
+    margin: 23px 0;
+}
+
+.container h2 {
+    margin: 23px 0;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container label {
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+
+.container form input[type='number'],
+select {
+    font-size: 25px;
+    width: 23vw;
+    margin-bottom: 23px;
+}
+
+.btn {
+    width: 140px;
+    padding: 5px 8px;
+    font-size: 20px;
+    background-color: rgb(97, 60, 133);
+    color: blanchedalmond;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.output table {
+    width: 60vw;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    background: linear-gradient(to right, #f9d5ec, #e0aad4);
+}
+
+.output th,
+.output td {
+    padding: 20px;
+    border: 1px solid #555;
+}
+
+.output thead {
+    background-color: rgb(97, 60, 133);
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.output tbody tr:nth-child(even) {
+    background-color: #f3d7eb;
+}
+
+.output tbody tr:hover {
+    background-color: #f5cde3;
+    cursor: pointer;
+}
+
+
+.output {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body {
+
+        font-size: 18px;
+    }
+
+    nav {
+        flex-direction: column;
+        font-size: 14x;
+    }
+
+    nav ul li {
+        margin: 5px 13px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 95vw;
+
+    }
+
+    .container form input[type='number'],
+    select,
+    label {
+        width: 80vw
+    }
+
+    .output {
+        overflow-x: auto;
+    }
+
+    .output table {
+        width: 100%;
+        font-size: 14px;
+        min-width: 400px;
+        /* prevents columns from collapsing */
+    }
+
+    .output th,
+    .output td {
+        padding: 10px;
+    }
+
+    .output thead {
+        font-size: 16px;
+    }
+}
+
+footer {
+    text-align: center;
+}

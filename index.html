@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter - Covert your currency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--CREATED BY SATAKSHI RATHOD-->
+<body>
+    <nav>
+
+        <div class="logo">
+            <img src="logo.png" alt="Satakshi Logo" class="logo-img" style="height: 60px; vertical-align: middle;">
+        </div>
+
+
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+        <form action="/action.php" method="get">
+            <label for="quantity">Choose a quantity : </label>
+            <input type="number" name="quantity" min="1" max="10">
+            <label for="currency">Choose a currency : </label>
+            <select name="Currency">
+                <option value="AED">UAE Dirham (AED)</option>
+                <option value="ARS">Argentine Peso (ARS)</option>
+                <option value="AUD">Australian Dollar (AUD)</option>
+                <option value="BDT">Bangladeshi Taka (BDT)</option>
+                <option value="BHD">Bahraini Dinar (BHD)</option>
+                <option value="BRL">Brazilian Real (BRL)</option>
+                <option value="CAD">Canadian Dollar (CAD)</option>
+                <option value="CHF">Swiss Franc (CHF)</option>
+                <option value="CLP">Chilean Peso (CLP)</option>
+                <option value="CNY">Chinese Yuan (CNY)</option>
+                <option value="COP">Colombian Peso (COP)</option>
+                <option value="CZK">Czech Koruna (CZK)</option>
+                <option value="DKK">Danish Krone (DKK)</option>
+                <option value="EGP">Egyptian Pound (EGP)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">British Pound (GBP)</option>
+                <option value="GHS">Ghanaian Cedi (GHS)</option>
+                <option value="HKD">Hong Kong Dollar (HKD)</option>
+                <option value="HUF">Hungarian Forint (HUF)</option>
+                <option value="IDR">Indonesian Rupiah (IDR)</option>
+                <option value="ILS">Israeli Shekel (ILS)</option>
+                <option value="INR">Indian Rupee (INR)</option>
+                <option value="JPY">Japanese Yen (JPY)</option>
+                <option value="KES">Kenyan Shilling (KES)</option>
+                <option value="KRW">South Korean Won (KRW)</option>
+                <option value="KWD">Kuwaiti Dinar (KWD)</option>
+                <option value="LKR">Sri Lankan Rupee (LKR)</option>
+                <option value="MXN">Mexican Peso (MXN)</option>
+                <option value="MYR">Malaysian Ringgit (MYR)</option>
+                <option value="NGN">Nigerian Naira (NGN)</option>
+                <option value="NOK">Norwegian Krone (NOK)</option>
+                <option value="NPR">Nepalese Rupee (NPR)</option>
+                <option value="NZD">New Zealand Dollar (NZD)</option>
+                <option value="OMR">Omani Rial (OMR)</option>
+                <option value="PHP">Philippine Peso (PHP)</option>
+                <option value="PKR">Pakistani Rupee (PKR)</option>
+                <option value="PLN">Polish Zloty (PLN)</option>
+                <option value="QAR">Qatari Riyal (QAR)</option>
+                <option value="RUB">Russian Ruble (RUB)</option>
+                <option value="SAR">Saudi Riyal (SAR)</option>
+                <option value="SEK">Swedish Krona (SEK)</option>
+                <option value="SGD">Singapore Dollar (SGD)</option>
+                <option value="THB">Thai Baht (THB)</option>
+                <option value="TRY">Turkish Lira (TRY)</option>
+                <option value="TWD">New Taiwan Dollar (TWD)</option>
+                <option value="UAH">Ukrainian Hryvnia (UAH)</option>
+                <option value="USD">US Dollar (USD)</option>
+                <option value="VND">Vietnamese Dong (VND)</option>
+                <option value="ZAR">South African Rand (ZAR)</option>
+
+            </select>
+            <button class="btn" type="submit" value="Submit">SUBMIT</button>
+
+        </form>
+        <div class="output">
+            <h2>Here is your converted value in different currencies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <footer>
+        Copyrigth &copy; All rights reserved
+    </footer>
+    <script>
+
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
